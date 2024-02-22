@@ -599,7 +599,7 @@ STATE 5: Завершение</Text>
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
                                   <d17p1:ArgumentItem z:Id="i72">
                                     <d17p1:ArgumentName>list_processesToKill</d17p1:ArgumentName>
-                                    <d17p1:Expression>new List&lt;String&gt; {"chrome", "excel"}</d17p1:Expression>
+                                    <d17p1:Expression>new List&lt;String&gt; {}</d17p1:Expression>
                                     <d17p1:Type>List&lt;System.String&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
                                 </_value>
@@ -3217,7 +3217,7 @@ STATE 5: Завершение</Text>
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
                                   <d17p1:ArgumentItem z:Id="i364">
                                     <d17p1:ArgumentName>list_processesToKill</d17p1:ArgumentName>
-                                    <d17p1:Expression>new List&lt;String&gt; {"chrome", "excel"}</d17p1:Expression>
+                                    <d17p1:Expression>new List&lt;String&gt; {}</d17p1:Expression>
                                     <d17p1:Type>List&lt;System.String&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
                                 </_value>
@@ -3739,7 +3739,7 @@ STATE 5: Завершение</Text>
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
                                   <d17p1:ArgumentItem z:Id="i420">
                                     <d17p1:ArgumentName>list_processesToKill</d17p1:ArgumentName>
-                                    <d17p1:Expression>new List&lt;String&gt;{"chrome", "excel"}</d17p1:Expression>
+                                    <d17p1:Expression>new List&lt;String&gt;{}</d17p1:Expression>
                                     <d17p1:Type>List&lt;System.String&gt;</d17p1:Type>
                                   </d17p1:ArgumentItem>
                                 </_value>
@@ -4164,7 +4164,7 @@ STATE 5: Завершение</Text>
       <TypeString>System.Object</TypeString>
     </Parameter>
     <Parameter z:Id="i459">
-      <DefaultValueExpression>@"Ref_Processing"</DefaultValueExpression>
+      <DefaultValueExpression>@"NikitaBugakoTestQueue"</DefaultValueExpression>
       <Description>Название очереди</Description>
       <Name>str_queueName</Name>
       <TypeString>System.String</TypeString>
@@ -4176,7 +4176,7 @@ STATE 5: Завершение</Text>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
     <Parameter z:Id="i461">
-      <DefaultValueExpression>false</DefaultValueExpression>
+      <DefaultValueExpression>true</DefaultValueExpression>
       <Description>bool_usePerformer==true, bool_useDispatcher==false - робот работает в режиме обработки транзакций в целевой очереди.</Description>
       <Name>bool_usePerformer</Name>
       <TypeString>System.Boolean</TypeString>
