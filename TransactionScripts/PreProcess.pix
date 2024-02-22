@@ -64,7 +64,7 @@
                           <PropertyValue z:Id="i12">
                             <PropertyName>URL</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>dict_config["RiveGaucheURL"].ToString()</_expression>
+                            <_expression></_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
@@ -113,7 +113,7 @@
                           <PropertyValue z:Id="i19">
                             <PropertyName>Browser</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression></_expression>
+                            <_expression>out_br_main</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
@@ -539,6 +539,12 @@
       <Description></Description>
       <Name>bool_useDispatcher</Name>
       <TypeString>System.Boolean</TypeString>
+    </Parameter>
+    <Parameter z:Id="i64">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>out_br_main</Name>
+      <TypeString>Web.Core.WebBrowser</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />

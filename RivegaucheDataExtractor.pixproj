@@ -55,6 +55,10 @@
       <IsMain>false</IsMain>
       <Path>Test.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i15">
+      <IsMain>false</IsMain>
+      <Path>Performer\DataExtraction.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>RivegaucheDataExtractor</Name>
