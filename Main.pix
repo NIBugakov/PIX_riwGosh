@@ -3528,221 +3528,18 @@ STATE 5: Завершение</Text>
                       <AbstractStep z:Id="i396" i:type="ExecutedStep">
                         <Childs>
                           <AbstractStep z:Id="i397" i:type="ExecutedStep">
-                            <Childs>
-                              <AbstractStep z:Id="i398" i:type="ExecutedStep">
-                                <Childs>
-                                  <AbstractStep z:Id="i399" i:type="ExecutedStep">
-                                    <Childs />
-                                    <Id>4da737b6-a5d6-4872-b6a6-a2e9d2af6002</Id>
-                                    <Parent z:Ref="i398" />
-                                    <PropertyValues>
-                                      <PropertyValue z:Id="i400">
-                                        <PropertyName>FilePath</PropertyName>
-                                        <_dataType>Expression</_dataType>
-                                        <_expression>@"TransactionScripts\Finalize.pix"</_expression>
-                                        <_value i:nil="true" />
-                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                      </PropertyValue>
-                                      <PropertyValue z:Id="i401">
-                                        <PropertyName>Parameters</PropertyName>
-                                        <_dataType>Value</_dataType>
-                                        <_expression i:nil="true" />
-                                        <_value xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d21p1:ArrayOfArgumentItem">
-                                          <d21p1:ArgumentItem z:Id="i402">
-                                            <d21p1:ArgumentName>dict_config</d21p1:ArgumentName>
-                                            <d21p1:Expression>dict_config</d21p1:Expression>
-                                            <d21p1:Type>Dictionary&lt;System.String, System.Object&gt;</d21p1:Type>
-                                          </d21p1:ArgumentItem>
-                                          <d21p1:ArgumentItem z:Id="i403">
-                                            <d21p1:ArgumentName>dict_paths</d21p1:ArgumentName>
-                                            <d21p1:Expression>dict_paths</d21p1:Expression>
-                                            <d21p1:Type>Dictionary&lt;System.String, System.String&gt;</d21p1:Type>
-                                          </d21p1:ArgumentItem>
-                                          <d21p1:ArgumentItem z:Id="i404">
-                                            <d21p1:ArgumentName>dict_secureData</d21p1:ArgumentName>
-                                            <d21p1:Expression>dict_secureData</d21p1:Expression>
-                                            <d21p1:Type>Dictionary&lt;System.String, System.Security.SecureString&gt;</d21p1:Type>
-                                          </d21p1:ArgumentItem>
-                                        </_value>
-                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                      </PropertyValue>
-                                      <PropertyValue z:Id="i405">
-                                        <PropertyName>Timeout</PropertyName>
-                                        <_dataType>Value</_dataType>
-                                        <_expression i:nil="true" />
-                                        <_value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:int">0</_value>
-                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                      </PropertyValue>
-                                    </PropertyValues>
-                                    <SelectedOptionId i:nil="true" />
-                                    <EnableStatus>true</EnableStatus>
-                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                    <RetryCount>-1</RetryCount>
-                                    <Text>Выполнить скрипт</Text>
-                                    <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
-                                  </AbstractStep>
-                                </Childs>
-                                <Id>c29d745d-9193-4c66-b3da-8ac59e5c9ec9</Id>
-                                <Parent z:Ref="i397" />
-                                <PropertyValues />
-                                <SelectedOptionId i:nil="true" />
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text></Text>
-                                <_activityFullName>BR.Core.Base.Try</_activityFullName>
-                              </AbstractStep>
-                              <AbstractStep z:Id="i406" i:type="ExecutedStep">
-                                <Childs>
-                                  <AbstractStep z:Id="i407" i:type="ExecutedStep">
-                                    <Childs />
-                                    <Id>8e82aefa-1a51-4507-b0b5-0cf248e935fa</Id>
-                                    <Parent z:Ref="i406" />
-                                    <PropertyValues>
-                                      <PropertyValue z:Id="i408">
-                                        <PropertyName>Value</PropertyName>
-                                        <_dataType>Expression</_dataType>
-                                        <_expression>errorSource</_expression>
-                                        <_value i:nil="true" />
-                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                      </PropertyValue>
-                                      <PropertyValue z:Id="i409">
-                                        <PropertyName>To</PropertyName>
-                                        <_dataType>Expression</_dataType>
-                                        <_expression>exc_main.Source</_expression>
-                                        <_value i:nil="true" />
-                                        <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                      </PropertyValue>
-                                    </PropertyValues>
-                                    <SelectedOptionId i:nil="true" />
-                                    <EnableStatus>true</EnableStatus>
-                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                    <RetryCount>-1</RetryCount>
-                                    <Text>Источник ошибки</Text>
-                                    <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-                                  </AbstractStep>
-                                </Childs>
-                                <Id>c43fcafc-8254-4f8f-b1c9-b56af2919100</Id>
-                                <Parent z:Ref="i397" />
-                                <PropertyValues>
-                                  <PropertyValue z:Id="i410">
-                                    <PropertyName>Message</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>errorMessage</_expression>
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                  <PropertyValue z:Id="i411">
-                                    <PropertyName>StackTrace</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression></_expression>
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                  <PropertyValue z:Id="i412">
-                                    <PropertyName>Source</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>errorSource</_expression>
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                  <PropertyValue z:Id="i413">
-                                    <PropertyName>Exception</PropertyName>
-                                    <_dataType>Expression</_dataType>
-                                    <_expression>exc_main</_expression>
-                                    <_value i:nil="true" />
-                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                  </PropertyValue>
-                                </PropertyValues>
-                                <SelectedOptionId i:nil="true" />
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text></Text>
-                                <_activityFullName>BR.Core.Base.Catch</_activityFullName>
-                              </AbstractStep>
-                              <AbstractStep z:Id="i414" i:type="ExecutedStep">
-                                <Childs />
-                                <Id>520cb68f-ece8-4691-bd20-cfe0f89d1965</Id>
-                                <Parent z:Ref="i397" />
-                                <PropertyValues />
-                                <SelectedOptionId i:nil="true" />
-                                <EnableStatus>true</EnableStatus>
-                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                                <RetryCount>-1</RetryCount>
-                                <Text></Text>
-                                <_activityFullName>BR.Core.Base.Finally</_activityFullName>
-                              </AbstractStep>
-                            </Childs>
-                            <Id>9b917dc3-a3c7-40d4-b7ff-10fed20ec65c</Id>
-                            <Parent z:Ref="i396" />
-                            <PropertyValues />
-                            <SelectedOptionId i:nil="true" />
-                            <EnableStatus>true</EnableStatus>
-                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                            <RetryCount>-1</RetryCount>
-                            <Text>Выполнение конечных действий</Text>
-                            <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
-                          </AbstractStep>
-                        </Childs>
-                        <Id>c86cc896-4914-431a-b80c-fba51503908d</Id>
-                        <Parent z:Ref="i395" />
-                        <PropertyValues />
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
-                      </AbstractStep>
-                      <AbstractStep z:Id="i415" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>dd426c56-6234-46d9-b0f7-71096999f7b8</Id>
-                        <Parent z:Ref="i395" />
-                        <PropertyValues />
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
-                      </AbstractStep>
-                    </Childs>
-                    <Id>93638d62-ac08-457d-b310-e7769c3fb2f2</Id>
-                    <Parent z:Ref="i393" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i416">
-                        <PropertyName>Condition</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>bool_usePerformer==true &amp;&amp; bool_transactionError==false &amp;&amp; exc_main==null</_expression>
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text>Выполнение конечных действий, если все транзакции были успешно обработаны в режиме Performer</Text>
-                    <_activityFullName>BR.Core.Base.If</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i417" i:type="ExecutedStep">
-                    <Childs>
-                      <AbstractStep z:Id="i418" i:type="ExecutedStep">
-                        <Childs>
-                          <AbstractStep z:Id="i419" i:type="ExecutedStep">
                             <Childs />
                             <Id>1e311c12-c8ac-452f-b274-d3f0e95c4a9d</Id>
-                            <Parent z:Ref="i418" />
+                            <Parent z:Ref="i396" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i420">
+                              <PropertyValue z:Id="i398">
                                 <PropertyName>Level</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core.Base" i:type="d17p1:LogLevel">Info</_value>
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i421">
+                              <PropertyValue z:Id="i399">
                                 <PropertyName>Text</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>"LogStep: Завершение работы робота"</_expression>
@@ -3757,24 +3554,24 @@ STATE 5: Завершение</Text>
                             <Text>LogStep - Завершение работы робота</Text>
                             <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i422" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i400" i:type="ExecutedStep">
                             <Childs />
                             <Id>02389913-1755-409f-95b4-ffc7675a9cb5</Id>
-                            <Parent z:Ref="i418" />
+                            <Parent z:Ref="i396" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i423">
+                              <PropertyValue z:Id="i401">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>@"FrameworkScripts\KillProcesses.pix"</_expression>
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i424">
+                              <PropertyValue z:Id="i402">
                                 <PropertyName>Parameters</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
                                 <_value xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d17p1:ArrayOfArgumentItem">
-                                  <d17p1:ArgumentItem z:Id="i425">
+                                  <d17p1:ArgumentItem z:Id="i403">
                                     <d17p1:ArgumentName>list_processesToKill</d17p1:ArgumentName>
                                     <d17p1:Expression>new List&lt;String&gt;{}</d17p1:Expression>
                                     <d17p1:Type>List&lt;System.String&gt;</d17p1:Type>
@@ -3782,7 +3579,7 @@ STATE 5: Завершение</Text>
                                 </_value>
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i426">
+                              <PropertyValue z:Id="i404">
                                 <PropertyName>Timeout</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
@@ -3797,12 +3594,12 @@ STATE 5: Завершение</Text>
                             <Text>Завершить процессы робота по умолчанию</Text>
                             <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i427" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i405" i:type="ExecutedStep">
                             <Childs />
                             <Id>f51591a0-e7be-4986-80dc-f3bfb96f9538</Id>
-                            <Parent z:Ref="i418" />
+                            <Parent z:Ref="i396" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i428">
+                              <PropertyValue z:Id="i406">
                                 <PropertyName>Count</PropertyName>
                                 <_dataType>Value</_dataType>
                                 <_expression i:nil="true" />
@@ -3817,12 +3614,12 @@ STATE 5: Завершение</Text>
                             <Text i:nil="true" />
                             <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i429" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i407" i:type="ExecutedStep">
                             <Childs />
                             <Id>3a925492-a575-4c95-ab76-aa880d9b9bf5</Id>
-                            <Parent z:Ref="i418" />
+                            <Parent z:Ref="i396" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i430">
+                              <PropertyValue z:Id="i408">
                                 <PropertyName>FilePath</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>dict_paths["TEMPFolder"]</_expression>
@@ -3839,7 +3636,7 @@ STATE 5: Завершение</Text>
                           </AbstractStep>
                         </Childs>
                         <Id>0f6647bf-0601-40c7-9bf0-7b9063e25b96</Id>
-                        <Parent z:Ref="i417" />
+                        <Parent z:Ref="i395" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <EnableStatus>true</EnableStatus>
@@ -3848,21 +3645,21 @@ STATE 5: Завершение</Text>
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.Try</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i431" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i409" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i432" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i410" i:type="ExecutedStep">
                             <Childs />
                             <Id>063de43d-0460-4af8-8893-fc8399b4d0a1</Id>
-                            <Parent z:Ref="i431" />
+                            <Parent z:Ref="i409" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i433">
+                              <PropertyValue z:Id="i411">
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>errorSource</_expression>
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i434">
+                              <PropertyValue z:Id="i412">
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>exc_main.Source</_expression>
@@ -3879,30 +3676,30 @@ STATE 5: Завершение</Text>
                           </AbstractStep>
                         </Childs>
                         <Id>02dca429-ac9c-4519-8ff0-76e809334786</Id>
-                        <Parent z:Ref="i417" />
+                        <Parent z:Ref="i395" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i435">
+                          <PropertyValue z:Id="i413">
                             <PropertyName>Message</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>errorMessage</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i436">
+                          <PropertyValue z:Id="i414">
                             <PropertyName>StackTrace</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression></_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i437">
+                          <PropertyValue z:Id="i415">
                             <PropertyName>Source</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>errorSource</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i438">
+                          <PropertyValue z:Id="i416">
                             <PropertyName>Exception</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>exc_main</_expression>
@@ -3917,25 +3714,25 @@ STATE 5: Завершение</Text>
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.Catch</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i439" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i417" i:type="ExecutedStep">
                         <Childs>
-                          <AbstractStep z:Id="i440" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i418" i:type="ExecutedStep">
                             <Childs>
-                              <AbstractStep z:Id="i441" i:type="ExecutedStep">
+                              <AbstractStep z:Id="i419" i:type="ExecutedStep">
                                 <Childs>
-                                  <AbstractStep z:Id="i442" i:type="ExecutedStep">
+                                  <AbstractStep z:Id="i420" i:type="ExecutedStep">
                                     <Childs />
                                     <Id>b162d2f1-60dc-404d-8b07-f6efe980e73f</Id>
-                                    <Parent z:Ref="i441" />
+                                    <Parent z:Ref="i419" />
                                     <PropertyValues>
-                                      <PropertyValue z:Id="i443">
+                                      <PropertyValue z:Id="i421">
                                         <PropertyName>Text</PropertyName>
                                         <_dataType>Expression</_dataType>
                                         <_expression>exc_main.Message.Contains($"{exc_main.GetType()}") ? $"{exc_main.Message}\n{exc_main.Source}" : $"{exc_main.GetType()}: {exc_main.Message}\n{exc_main.Source}"</_expression>
                                         <_value i:nil="true" />
                                         <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                       </PropertyValue>
-                                      <PropertyValue z:Id="i444">
+                                      <PropertyValue z:Id="i422">
                                         <PropertyName>Exception</PropertyName>
                                         <_dataType>Expression</_dataType>
                                         <_expression>exc_main</_expression>
@@ -3952,7 +3749,7 @@ STATE 5: Завершение</Text>
                                   </AbstractStep>
                                 </Childs>
                                 <Id>4953780e-0735-4f62-bcf9-abb1143f7ae5</Id>
-                                <Parent z:Ref="i440" />
+                                <Parent z:Ref="i418" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
                                 <EnableStatus>true</EnableStatus>
@@ -3961,21 +3758,21 @@ STATE 5: Завершение</Text>
                                 <Text></Text>
                                 <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                               </AbstractStep>
-                              <AbstractStep z:Id="i445" i:type="ExecutedStep">
+                              <AbstractStep z:Id="i423" i:type="ExecutedStep">
                                 <Childs>
-                                  <AbstractStep z:Id="i446" i:type="ExecutedStep">
+                                  <AbstractStep z:Id="i424" i:type="ExecutedStep">
                                     <Childs />
                                     <Id>1218d02b-fa7e-4cd5-a7fa-ea10f487ff2b</Id>
-                                    <Parent z:Ref="i445" />
+                                    <Parent z:Ref="i423" />
                                     <PropertyValues>
-                                      <PropertyValue z:Id="i447">
+                                      <PropertyValue z:Id="i425">
                                         <PropertyName>Level</PropertyName>
                                         <_dataType>Value</_dataType>
                                         <_expression i:nil="true" />
                                         <_value xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.Core.Base" i:type="d21p1:LogLevel">Warn</_value>
                                         <_xpathSettings xmlns:d21p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                       </PropertyValue>
-                                      <PropertyValue z:Id="i448">
+                                      <PropertyValue z:Id="i426">
                                         <PropertyName>Text</PropertyName>
                                         <_dataType>Expression</_dataType>
                                         <_expression>exc_main.Message.Contains($"{exc_main.GetType()}") ? $"{exc_main.Message}\n{exc_main.Source}" : $"{exc_main.GetType()}: {exc_main.Message}\n{exc_main.Source}"</_expression>
@@ -3992,9 +3789,9 @@ STATE 5: Завершение</Text>
                                   </AbstractStep>
                                 </Childs>
                                 <Id>8fe477f8-e55c-491e-9f61-612078fe3951</Id>
-                                <Parent z:Ref="i440" />
+                                <Parent z:Ref="i418" />
                                 <PropertyValues>
-                                  <PropertyValue z:Id="i449">
+                                  <PropertyValue z:Id="i427">
                                     <PropertyName>Condition</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>exc_main != null</_expression>
@@ -4009,10 +3806,10 @@ STATE 5: Завершение</Text>
                                 <Text></Text>
                                 <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
                               </AbstractStep>
-                              <AbstractStep z:Id="i450" i:type="ExecutedStep">
+                              <AbstractStep z:Id="i428" i:type="ExecutedStep">
                                 <Childs />
                                 <Id>2b173f2d-4f63-4434-bcc7-c6e6e12ede90</Id>
-                                <Parent z:Ref="i440" />
+                                <Parent z:Ref="i418" />
                                 <PropertyValues />
                                 <SelectedOptionId i:nil="true" />
                                 <EnableStatus>true</EnableStatus>
@@ -4023,9 +3820,9 @@ STATE 5: Завершение</Text>
                               </AbstractStep>
                             </Childs>
                             <Id>d629c374-5130-4930-80d3-60ff6bc4fa8a</Id>
-                            <Parent z:Ref="i439" />
+                            <Parent z:Ref="i417" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i451">
+                              <PropertyValue z:Id="i429">
                                 <PropertyName>Condition</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>exc_main != null &amp;&amp; exc_main.GetType() != new BusinessRuleException().GetType()</_expression>
@@ -4040,19 +3837,19 @@ STATE 5: Завершение</Text>
                             <Text>Есть системная ошибка?</Text>
                             <_activityFullName>BR.Core.Base.If</_activityFullName>
                           </AbstractStep>
-                          <AbstractStep z:Id="i452" i:type="ExecutedStep">
+                          <AbstractStep z:Id="i430" i:type="ExecutedStep">
                             <Childs />
                             <Id>d97a1437-d1af-45cc-8260-25f6b275c836</Id>
-                            <Parent z:Ref="i439" />
+                            <Parent z:Ref="i417" />
                             <PropertyValues>
-                              <PropertyValue z:Id="i453">
+                              <PropertyValue z:Id="i431">
                                 <PropertyName>Value</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>true</_expression>
                                 <_value i:nil="true" />
                                 <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                               </PropertyValue>
-                              <PropertyValue z:Id="i454">
+                              <PropertyValue z:Id="i432">
                                 <PropertyName>To</PropertyName>
                                 <_dataType>Expression</_dataType>
                                 <_expression>bool_exit</_expression>
@@ -4069,7 +3866,7 @@ STATE 5: Завершение</Text>
                           </AbstractStep>
                         </Childs>
                         <Id>cf3314cd-3e49-48e2-bd38-c88dc9f388d0</Id>
-                        <Parent z:Ref="i417" />
+                        <Parent z:Ref="i395" />
                         <PropertyValues />
                         <SelectedOptionId i:nil="true" />
                         <EnableStatus>true</EnableStatus>
@@ -4104,7 +3901,7 @@ STATE 5: Завершение</Text>
             <Id>0c004d7c-5bc9-4073-bbc5-4a5aae58f2a4</Id>
             <Parent z:Ref="i54" />
             <PropertyValues>
-              <PropertyValue z:Id="i455">
+              <PropertyValue z:Id="i433">
                 <PropertyName>Condition</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>int_state == 1</_expression>
@@ -4123,14 +3920,14 @@ STATE 5: Завершение</Text>
         <Id>7aa35ff1-6eb2-48dc-90f4-433027da9947</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i456">
+          <PropertyValue z:Id="i434">
             <PropertyName>Condition</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>!bool_exit</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i457">
+          <PropertyValue z:Id="i435">
             <PropertyName>Counter</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression></_expression>
@@ -4164,61 +3961,61 @@ STATE 5: Завершение</Text>
     <d2p1:string>PIX.Core.Exceptions</d2p1:string>
   </Namespaces>
   <Params>
-    <Parameter z:Id="i458">
+    <Parameter z:Id="i436">
       <DefaultValueExpression>0</DefaultValueExpression>
       <Description>Количество транзакций, которое должно быть обработано за один запуск. int_transNumber==0 - без ограничений</Description>
       <Name>int_transNumber</Name>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i459">
+    <Parameter z:Id="i437">
       <DefaultValueExpression>false</DefaultValueExpression>
       <Description>bool_isProd==true - робот работает в продуктиве. bool_isProd==false - робот в предпродуктиве или тесте </Description>
       <Name>bool_isProd</Name>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i460">
+    <Parameter z:Id="i438">
       <DefaultValueExpression>false</DefaultValueExpression>
       <Description>bool_isPredProd==true - робот работает в предпродуктиве. bool_isPredProd==false - робот в продуктиве или тесте.</Description>
       <Name>bool_isPredProd</Name>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i461">
+    <Parameter z:Id="i439">
       <DefaultValueExpression>1</DefaultValueExpression>
       <Description>Макс. кол-во попыток обработки транзакции</Description>
       <Name>int_maxTransactionRetry</Name>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i462">
+    <Parameter z:Id="i440">
       <DefaultValueExpression>@""</DefaultValueExpression>
       <Description>Входной дополнительный параметр</Description>
       <Name>str_param1</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i463">
+    <Parameter z:Id="i441">
       <DefaultValueExpression>@""</DefaultValueExpression>
       <Description>Входной дополнительный параметр 2</Description>
       <Name>str_param2</Name>
       <TypeString>System.Object</TypeString>
     </Parameter>
-    <Parameter z:Id="i464">
+    <Parameter z:Id="i442">
       <DefaultValueExpression>@"NikitaBugakoTestQueue"</DefaultValueExpression>
       <Description>Название очереди</Description>
       <Name>str_queueName</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i465">
+    <Parameter z:Id="i443">
       <DefaultValueExpression>false</DefaultValueExpression>
       <Description>bool_useDispatcher==true, bool_usePerformer==false - робот работает в режиме создания транзакций в целевую очередь.</Description>
       <Name>bool_useDispatcher</Name>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i466">
+    <Parameter z:Id="i444">
       <DefaultValueExpression>true</DefaultValueExpression>
       <Description>bool_usePerformer==true, bool_useDispatcher==false - робот работает в режиме обработки транзакций в целевой очереди.</Description>
       <Name>bool_usePerformer</Name>
       <TypeString>System.Boolean</TypeString>
     </Parameter>
-    <Parameter z:Id="i467">
+    <Parameter z:Id="i445">
       <DefaultValueExpression>0</DefaultValueExpression>
       <Description>Макс. кол-во последовательных ошибок. При значении 0 - ограничений нет.</Description>
       <Name>int_maxConsecutiveExceptions</Name>
