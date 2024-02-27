@@ -3575,134 +3575,66 @@ ________________________________________________________________________________
                     <Childs>
                       <AbstractStep z:Id="i414" i:type="ExecutedStep">
                         <Childs />
-                        <Id>41f675c0-a9ee-43ae-8a58-4622a9e85878</Id>
+                        <Id>d9acc09b-eeff-49e1-b776-b0a1e17b195c</Id>
                         <Parent z:Ref="i413" />
                         <PropertyValues>
                           <PropertyValue z:Id="i415">
-                            <PropertyName>Value</PropertyName>
+                            <PropertyName>Connection</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>new System.Net.NetworkCredential(string.Empty, dict_secureData["credentialPG_passwd"]).Password;</_expression>
+                            <_expression>in_sql_rivegauche</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
                           <PropertyValue z:Id="i416">
-                            <PropertyName>To</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>str_password</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                        </PropertyValues>
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-                      </AbstractStep>
-                      <AbstractStep z:Id="i417" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>53dc0f22-6f4c-4545-a65b-3db9e0e69c36</Id>
-                        <Parent z:Ref="i413" />
-                        <PropertyValues>
-                          <PropertyValue z:Id="i418">
-                            <PropertyName>DataBaseConnectionString</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>@"Driver={PostgreSQL Unicode(x64)};Server=localhost;Port=5433;Database=RiwGosh;Uid="+dict_config["credentialPG_login"].ToString()+";Pwd="+str_password+";"</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i419">
-                            <PropertyName>DataBaseSecureConnectionString</PropertyName>
-                            <_dataType>Value</_dataType>
-                            <_expression></_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i420">
-                            <PropertyName>DataBaseProvider</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>"System.Data.Odbc"</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i421">
-                            <PropertyName>OutSqlConnection</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>sql_rivegauche</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                        </PropertyValues>
-                        <SelectedOptionId>0</SelectedOptionId>
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>Activities.DataBaseSQL.CreateConnection</_activityFullName>
-                      </AbstractStep>
-                      <AbstractStep z:Id="i422" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>d9acc09b-eeff-49e1-b776-b0a1e17b195c</Id>
-                        <Parent z:Ref="i413" />
-                        <PropertyValues>
-                          <PropertyValue z:Id="i423">
-                            <PropertyName>Connection</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>sql_rivegauche</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i424">
                             <PropertyName>DataBaseSchemaName</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>"public"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i425">
+                          <PropertyValue z:Id="i417">
                             <PropertyName>DataBaseTableName</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>"products"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i426">
+                          <PropertyValue z:Id="i418">
                             <PropertyName>DataTable</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>dt_oneTypeOfProduct</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i427">
+                          <PropertyValue z:Id="i419">
                             <PropertyName>ClearTable</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:boolean">false</_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i428">
+                          <PropertyValue z:Id="i420">
                             <PropertyName>TableWithHeaders</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:boolean">false</_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i429">
+                          <PropertyValue z:Id="i421">
                             <PropertyName>OneChunkMaxRowsCount</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:int">100</_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i430">
+                          <PropertyValue z:Id="i422">
                             <PropertyName>BulkTableInsertTimeout</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_value xmlns:d15p1="http://www.w3.org/2001/XMLSchema" i:type="d15p1:int">600</_value>
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i431">
+                          <PropertyValue z:Id="i423">
                             <PropertyName>AffectedRows</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression></_expression>
@@ -3716,26 +3648,6 @@ ________________________________________________________________________________
                         <RetryCount>-1</RetryCount>
                         <Text></Text>
                         <_activityFullName>Activities.DataBaseSQL.SaveTableToDatabase</_activityFullName>
-                      </AbstractStep>
-                      <AbstractStep z:Id="i432" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>fca2f120-cd26-45dc-8418-ecc6d84bce0f</Id>
-                        <Parent z:Ref="i413" />
-                        <PropertyValues>
-                          <PropertyValue z:Id="i433">
-                            <PropertyName>InSqlConnection</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>sql_rivegauche</_expression>
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                        </PropertyValues>
-                        <SelectedOptionId i:nil="true" />
-                        <EnableStatus>true</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>Activities.DataBaseSQL.RemoveConnection</_activityFullName>
                       </AbstractStep>
                     </Childs>
                     <Id>bdb875c4-4024-4a64-b7c6-81329e1211a5</Id>
@@ -3770,33 +3682,33 @@ ________________________________________________________________________________
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i434" i:type="ExecutedStep">
+          <AbstractStep z:Id="i424" i:type="ExecutedStep">
             <Childs />
             <Id>de85cde0-2700-4878-8d6e-c8658f391957</Id>
             <Parent z:Ref="i22" />
             <PropertyValues>
-              <PropertyValue z:Id="i435">
+              <PropertyValue z:Id="i425">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>errorMessage</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i436">
+              <PropertyValue z:Id="i426">
                 <PropertyName>StackTrace</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression></_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i437">
+              <PropertyValue z:Id="i427">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>errorSource</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i438">
+              <PropertyValue z:Id="i428">
                 <PropertyName>Exception</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>error</_expression>
@@ -3811,7 +3723,7 @@ ________________________________________________________________________________
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i439" i:type="ExecutedStep">
+          <AbstractStep z:Id="i429" i:type="ExecutedStep">
             <Childs />
             <Id>0cbb9939-6977-4a31-aadd-4b555711f704</Id>
             <Parent z:Ref="i22" />
@@ -3852,59 +3764,65 @@ ________________________________________________________________________________
     <d2p1:string>PIX.Core.Exceptions</d2p1:string>
   </Namespaces>
   <Params>
-    <Parameter z:Id="i440">
+    <Parameter z:Id="i430">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>dict_config</Name>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i441">
+    <Parameter z:Id="i431">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>dict_paths</Name>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i442">
+    <Parameter z:Id="i432">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>dict_secureData</Name>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Security.SecureString, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i443">
+    <Parameter z:Id="i433">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>str_transactionItem</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i444">
+    <Parameter z:Id="i434">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>str_transactionID</Name>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i445">
+    <Parameter z:Id="i435">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>int_maxTransactionRetry</Name>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i446">
+    <Parameter z:Id="i436">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>int_transactionRetryCounter</Name>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i447">
+    <Parameter z:Id="i437">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>in_br_main</Name>
       <TypeString>Web.Core.WebBrowser</TypeString>
     </Parameter>
-    <Parameter z:Id="i448">
+    <Parameter z:Id="i438">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>in_list_extactData</Name>
       <TypeString>System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i439">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>in_sql_rivegauche</Name>
+      <TypeString>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
